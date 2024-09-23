@@ -76,7 +76,7 @@ public abstract class DocumentDatabase<D> {
      * @param data the byte array representing the serialized document
      * @return the reconstructed document
      */
-    abstract D deconstruct(byte[] data);
+    public abstract D deconstruct(byte[] data);
 
     /**
      * Constructs a byte array from a document of type D.
@@ -84,7 +84,7 @@ public abstract class DocumentDatabase<D> {
      * @param document the document to be serialized
      * @return the byte array representing the serialized document
      */
-    abstract byte[] construct(D document);
+    public abstract byte[] construct(D document);
 
     /**
      * Creates a document with the given {@code key} as the name.
